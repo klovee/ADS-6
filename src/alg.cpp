@@ -28,4 +28,4 @@ BST<std::string>Tree;
   file.close();
   return Tree;
 }
-}
+
