@@ -6,7 +6,7 @@
 #include  "bst.h"
 
 BST<std::string> makeTree(const char* filename) {
-BST<std::string>Tree;
+BST<std::string> tree;
   char difFromAToa = 'a' - 'A';
   std::string wcount = "";
   std::ifstream file(filename);
@@ -21,10 +21,10 @@ BST<std::string>Tree;
         words += difFromAToa;
       wcount += words;
     } else if (wcount != "") {
-      Tree.add(wcount);
+      tree.add(wcount);
       wcount = "";
     }
   }
   file.close();
-  return Tree;
+  return tree;
 }
