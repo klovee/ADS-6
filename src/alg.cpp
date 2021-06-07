@@ -12,7 +12,7 @@ BST<std::string> tree;
   std::ifstream file(filename);
   if (!file) {
     std::cout << "Error reading file" << std::endl;
-    return Tree;
+    return tree;
   }
   while (!file.eof()) {
     char words = file.get();
